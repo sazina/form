@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+ <html>
+
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+ 	<title>Bootstrap 4</title>
+ 	<link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/font-awesome.css">
+ 	<link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+
+ <body>
+
+ 	<div class="container">
+
+ 		<div class="job-title">
+ 			<form action="/action_page.php" method="post">
+ 				<h6>Job Title</h6>
+ 				<input type="text" placeholder="Add a short descriptive job title" name="uname" required>
+ 			</form>
+ 		</div>
+ 		<div class="location">
+ 			<form action="/action_page.php" method="post">
+ 				<h6>job locaion</h6>
+ 				<p>Adding a specific address helps you reach nearby candidates</p>
+ 				<input type="text" placeholder="Madan bhandari road" name="uname" required>
+ 			</form>
+ 		</div>
+ 		<div class="salary">
+ 			<h6>Salary range (optional)</h6>
+ 			<div class="row">
+ 				<div class="col-md-3">
+ 					<input type="text" placeholder="maximum" name="uname" required>
+ 				</div>
+ 				<div class="col-md-1">
+ 					<p>To</p>
+ 				</div>
+ 				<div class="col-md-3">
+ 					<input type="text" placeholder="maximum" name="uname" required>
+ 				</div>
+ 				<div class="col-md-5">
+ 					<select id="Time" name="Time">
+ 						<option value="australia">Per hour</option>
+ 						<option value="1hr">1hr</option>
+ 						<option value="2hr">1hr</option>
+ 					</select>
+ 				</div>
+ 			</div>
+ 			</select>
+ 		</div>
+
+ 		<div class="job-type">
+ 			<h6>Job Type</h6>
+ 			<div class="row">
+ 				<div class="col-md-3"><select id="job-type" name="job-type">
+ 						<option value="full-time">full-time</option>
+ 						<option value="Part-time">Part-time</option>
+
+ 					</select>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="job-discription">
+ 			<div class="row">
+ 				<div class="col-md-6">
+ 					<h6>job description</h6>
+ 				</div>
+ 				<div class="col-md-6 d-flex justify-content-end">
+ 					<p>0/5000</p>
+ 				</div>
+
+ 			</div>
+
+ 			<textarea id="subject" name="subject"
+ 				placeholder="describe the responsibilities and preferred skills for this job"
+ 				style="height:200px"></textarea>
+ 		</div>
+
+ 		<div class="questions">
+ 			<h6>Application Questions(Optional)</h6>
+ 			<p>ask questions people are required to answer to find more applicants.</p>
+ 			<div class="row">
+ 				<div class="col-md-6 d-flex justify-content-between">
+ 					<div class="row">
+ 						<div class="col-md-2">
+ 							<i class="fa fa-times"></i>
+ 						</div>
+ 						<div class="col-md-10">
+ 							<select id="Time" name="Time">
+ 								<option value="question">Free text question</option>
+ 								<option value="question">1hr</option>
+ 								<option value="question">1hr</option>
+ 							</select>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-9 d-flex justify-content-end">
+ 					<p>0/200</p>
+ 				</div>
+ 				<textarea id="subject" name="subject" placeholder="add a question people can answer in a few sentences"
+ 					style="height:50px"></textarea>
+ 				<div class="d-flex justify-content-end add-question">
+ 					<i class="fa fa-plus"></i>
+ 					<h6>Add questions</h6>
+				 </div></div>
+				 <input type="submit" value="Submit">
+ 		</div>
+
+
+
+
+ 		<!-- Jquery Calling -->
+ 		<script src="js/jquery-3.2.1.slim.min.js"></script>
+ 		<script src="js/popper.min.js"></script>
+ 		<script src="js/bootstrap.min.js"></script>
+ </body>
+
+ </html>
